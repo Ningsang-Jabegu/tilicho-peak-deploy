@@ -9,7 +9,7 @@ const DetailsSection = () => {
           Deployment Details
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12">
           <DetailItem 
             label="Location" 
             value="Tilicho Lake, Manang" 
@@ -24,7 +24,11 @@ const DetailsSection = () => {
           />
           <DetailItem 
             label="Date" 
-            value="December 2024" 
+            value="22 Dec 2024" 
+          />
+          <DetailItem 
+            label="Time (NPT)" 
+            value="10:45 AM" 
           />
         </div>
 
