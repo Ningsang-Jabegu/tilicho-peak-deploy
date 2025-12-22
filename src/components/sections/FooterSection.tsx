@@ -24,7 +24,7 @@ const FooterSection = () => {
                 Ningsang Jabegu
               </p>
               <p className="text-sm text-muted-foreground">
-                College Trekking Expedition
+                Tilicho Trekking Expedition, Amrit Campus
               </p>
             </div>
           </div>
