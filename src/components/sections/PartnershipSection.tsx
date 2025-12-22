@@ -8,22 +8,29 @@ const PartnershipSection = () => {
           <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
             In partnership with
           </p>
-          
+
           <div className="flex items-center justify-center gap-4">
             {/* Logo - replace src with actual logo when available */}
-            <Avatar className="w-14 h-14 border-2 border-border">
-              <AvatarImage 
-                src="/rotaract-logo.png" 
+            <div
+              className="rounded overflow-hidden flex items-center justify-center "
+              style={{ width: "120px", height: "120px", borderRadius:"8px" ,border:"1px solid transparent"  }}
+            >
+              <img
+                src="/RAC Baneshwor Logo.png"
                 alt="Rotaract Club of Baneshwor Logo"
+                className="w-full h-full object-contain"
               />
-              <AvatarFallback className="bg-primary text-primary-foreground font-serif text-lg font-medium">
-                R
-              </AvatarFallback>
-            </Avatar>
-            <div className="text-left">
-              <p className="text-lg md:text-xl font-serif text-foreground">
-                Rotaract Club of Baneshwor
-              </p>
+              {/* <p className="text-xs font-medium">Rotaract Club of Baneshwor</p> */}
+            </div>
+            <div
+              className="rounded overflow-hidden flex items-center justify-center "
+              style={{ width: "120px", height: "120px", borderRadius:"8px" ,border:"1px solid transparent"  }}
+            >
+              <img
+                src="/ASCOL Logo.png"
+                alt="Rotaract Club of Baneshwor Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </div>
