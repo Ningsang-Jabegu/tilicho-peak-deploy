@@ -27,7 +27,7 @@ const Team = () => {
       initials: "AG",
     },
     {
-      name: "Ashuyt Adhikari",
+      name: "Achyut Adhikari",
       role: "Team Member",
       bio: "Contributing to the Tilicho Lake deployment expedition",
       initials: "AA",
@@ -43,12 +43,6 @@ const Team = () => {
       role: "Team Member",
       bio: "Contributing to the Tilicho Lake deployment expedition",
       initials: "BS",
-    },
-    {
-      name: "Ningsang Jabegu",
-      role: "Deployment Lead",
-      bio: "Spearheading the mission to deploy code at extreme altitudes",
-      initials: "NJ",
     },
     {
       name: "Sakshyam Chhatkuli",
@@ -150,11 +144,24 @@ const Team = () => {
               {moreTeamMembers.map((member, index) => (
                 <div
                   key={index}
-                  className="aspect-square bg-background rounded-lg flex items-center justify-center"
+                  className="aspect-square bg-background rounded-lg flex items-center justify-center display-flex flex-col gap-2 p-4 text-center"
                 >
-                  <p className="text-xs text-muted-foreground text-center">
-                    {member.name}
-                  </p>
+                  <Avatar className="w-16 h-16 border-2 border-border">
+                    <AvatarImage
+                      src={`/teams/${member.name}.${"png"}`}
+                      alt={member.name}
+                    />
+                    <AvatarFallback className="bg-background text-foreground font-serif">
+                      {member.initials}
+                    </AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <h3 className="text-lg font-serif">{member.name}</h3>
+                    <p className="text-sm text-muted-foreground">
+                      {member.role}
+                    </p>
+                  </div>
+                  <p className="text-muted-foreground text-sm">{member.bio}</p>
                 </div>
               ))}
             </div>
