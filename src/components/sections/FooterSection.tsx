@@ -9,7 +9,7 @@ const FooterSection = () => {
           <div className="flex items-center gap-4">
             <Avatar className="w-16 h-16 border-2 border-border">
               <AvatarImage 
-                src="/expedition-photo.jpg" 
+                src="/teams/Ningsang Jabegu.png" 
                 alt="Ningsang Jabegu"
               />
               <AvatarFallback className="bg-muted text-muted-foreground font-serif text-xl">
