@@ -32,7 +32,7 @@ const FooterSection = () => {
           {/* Links */}
           <div className="flex items-center gap-6">
             <a 
-              href="https://github.com/ningsang" 
+              href="https://github.com/Ningsang-Jabegu" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"

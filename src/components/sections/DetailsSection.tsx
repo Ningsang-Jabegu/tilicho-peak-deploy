@@ -24,11 +24,11 @@ const DetailsSection = () => {
           />
           <DetailItem 
             label="Date" 
-            value="22 Dec 2024" 
+            value="23 Dec 2025" 
           />
           <DetailItem 
             label="Time (NPT)" 
-            value="10:45 AM" 
+            value="06:55 AM" 
           />
         </div>
 
