@@ -216,7 +216,7 @@ const About = () => {
                 <div className="relative pl-6">
                   <span className="absolute left-[-10px] top-2 w-3 h-3 rounded-full bg-glacial ring-4 ring-background" />
                   <p className="text-xs uppercase tracking-wide text-muted-foreground">6:27 AM</p>
-                  <p className="text-foreground font-semibold">Reached Tilicho Lake</p>
+                  <p className="text-foreground font-semibold">Reached Tilicho Lake, Deployed 2 Websites</p>
                   <p className="text-sm text-muted-foreground">Coordinates: 28.677473, 83.864169</p>
                 </div>
                 <div className="relative pl-6">
@@ -295,8 +295,23 @@ const About = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-serif">Final Reality Check</h2>
               <p className="text-muted-foreground leading-relaxed">
-                This deployment succeeded not because conditions were favorable, but because preparation met commitment. More technical documentation and verified artifacts will be added here.
+                This deployment succeeded not because conditions were favorable, but because preparation met commitment.
               </p>
+              <div className="mt-6 pt-6 border-t border-border/50">
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  For a detailed technical breakdown of the expedition, including comprehensive logs, sensor data, and environmental measurements collected during the trek:
+                </p>
+                <a href="https://doi.org/10.5281/zenodo.18060983" target="_blank" rel="noopener noreferrer">
+                  <Button className="gap-2">
+                    View Technical Expedition Log
+                  </Button>
+                </a>
+                <a href="/documents/tilicho_expedition_onepage.pdf" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="gap-2 ml-2">
+                    Read Tilicho Expedition One Pager
+                  </Button>
+                </a>
+              </div>
             </section>
           </div>
         </div>
