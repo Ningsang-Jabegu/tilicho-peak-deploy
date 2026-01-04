@@ -301,16 +301,31 @@ const About = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   For a detailed technical breakdown of the expedition, including comprehensive logs, sensor data, and environmental measurements collected during the trek:
                 </p>
-                <a href="https://doi.org/10.5281/zenodo.18060983" target="_blank" rel="noopener noreferrer">
-                  <Button className="gap-2">
-                    View Technical Expedition Log
-                  </Button>
-                </a>
-                <a href="/documents/tilicho_expedition_onepage.pdf" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" className="gap-2 ml-2">
-                    Read Tilicho Expedition One Pager
-                  </Button>
-                </a>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  <a
+                    href="https://doi.org/10.5281/zenodo.18060983"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto"
+                  >
+                    <Button className="gap-2 w-full sm:w-auto justify-center">
+                      View Technical Expedition Log
+                    </Button>
+                  </a>
+                  <a
+                    href="/documents/tilicho_expedition_onepage.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto"
+                  >
+                    <Button
+                      variant="outline"
+                      className="gap-2 w-full sm:w-auto justify-center"
+                    >
+                      Read Tilicho Expedition One Pager
+                    </Button>
+                  </a>
+                </div>
               </div>
             </section>
           </div>
