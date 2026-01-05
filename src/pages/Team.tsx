@@ -140,11 +140,11 @@ const Team = () => {
               soon. This expedition brought together passionate individuals from
               Amrit Campus.
             </p>
-            <div className="grid grid-cols-4 gap-4 mt-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 mt-6">
               {moreTeamMembers.map((member, index) => (
                 <div
                   key={index}
-                  className="aspect-square bg-background rounded-lg flex items-center justify-center display-flex flex-col gap-2 p-4 text-center"
+                  className="aspect-square bg-background rounded-lg flex flex-col items-center justify-center gap-2 p-3 sm:p-4 text-center"
                 >
                   <Avatar className="w-16 h-16 border-2 border-border">
                     <AvatarImage
@@ -156,12 +156,12 @@ const Team = () => {
                     </AvatarFallback>
                   </Avatar>
                   <div>
-                    <h3 className="text-lg font-serif">{member.name}</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <h3 className="text-sm sm:text-lg font-serif">{member.name}</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">
                       {member.role}
                     </p>
                   </div>
-                  <p className="text-muted-foreground text-sm">{member.bio}</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm hidden sm:block">{member.bio}</p>
                 </div>
               ))}
             </div>
